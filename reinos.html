@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinos de WoW</title>
+    <link rel="stylesheet" href="servidorestilos.css">
+    <style>
+        /* Estilos CSS (personaliza según tus preferencias) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .reino {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .pvp {
+            border-color: red;
+        }
+        .pve {
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="servidor.html">Inicio</a>
+            <a href="reinos.html">Reinos</a>
+            <a href="#">Descargar</a>
+            <a href="#">Premium</a>
+            <a href="#">Soporte</a>
+            <a id="login" href="#">Ingresa</a>
+        </div>
+    </header>
+    <div class="reino pvp">
+        <h2>Reino PvP: Azeroth Sangriento</h2>
+        <p>Jugadores en línea: <span id="pvpOnline">1234</span></p>
+        <p>Ratio de facción: <span id="pvpRatio">1.2</span></p>
+    </div>
+
+    <div class="reino pve">
+        <h2>Reino PvE BlizzLike: Tranquilidad de Azeroth</h2>
+        <p>Jugadores en línea: <span id="pveOnline">5678</span></p>
+        <p>Nivel promedio: <span id="pveLevel">55</span></p>
+    </div>
+
+    <script>
+        // Datos aleatorios para las estadísticas
+        document.getElementById('pvpOnline').textContent = Math.floor(Math.random() * 2000) + 1000;
+        document.getElementById('pvpRatio').textContent = (Math.random() * 0.5 + 1).toFixed(2);
+        document.getElementById('pveOnline').textContent = Math.floor(Math.random() * 5000) + 5000;
+        document.getElementById('pveLevel').textContent = Math.floor(Math.random() * 20) + 50;
+    </script>
+</body>
+</html>
