@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,44 +10,59 @@
         /* Estilos CSS (personaliza según tus preferencias) */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
         }
+
         .reino {
             padding: 20px;
             border: 1px solid #ccc;
             margin: 10px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.7);
             border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
+
         .pvp {
             border-color: red;
+            font-size: 25px;
         }
+
         .pve {
             border-color: green;
+            font-size: 25px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="menu">
             <a href="servidor.html">Inicio</a>
             <a href="reinos.html">Reinos</a>
-            <a href="#">Descargar</a>
-            <a href="#">Premium</a>
-            <a href="#">Soporte</a>
-            <a id="login" href="#">Ingresa</a>
+            <a href="#">Donaciones</a>
+            <a href="contactanos.html">Contáctanos</a>
         </div>
     </header>
+    <br>
+    <br>
+    <br>
     <div class="reino pvp">
         <h2>Reino PvP: Azeroth Sangriento</h2>
-        <p>Jugadores en línea: <span id="pvpOnline">1234</span></p>
-        <p>Ratio de facción: <span id="pvpRatio">1.2</span></p>
+        <img src="imagenes/gifpvp.gif" alt="Reino PVP" height="300px">
+        <p><strong>Jugadores en línea:</strong> <span id="pvpOnline">1234</span></p>
+        <br>
+        <p><strong>Ratio de facción:</strong> <span id="pvpRatio">1.2</span></p>
     </div>
-
+    <br>
+    <br>
+    <br>
     <div class="reino pve">
         <h2>Reino PvE BlizzLike: Tranquilidad de Azeroth</h2>
-        <p>Jugadores en línea: <span id="pveOnline">5678</span></p>
-        <p>Nivel promedio: <span id="pveLevel">55</span></p>
+        <img src="imagenes/gifpve.gif" alt="Reino PVE" height="300px">
+        <p><strong>Jugadores en línea:</strong> <span id="pveOnline">5678</span></p>
+        <br>
+        <p><strong>Nivel promedio:</strong> <span id="pveLevel">55</span></p>
     </div>
 
     <script>
@@ -56,5 +72,9 @@
         document.getElementById('pveOnline').textContent = Math.floor(Math.random() * 5000) + 5000;
         document.getElementById('pveLevel').textContent = Math.floor(Math.random() * 20) + 50;
     </script>
+    <footer>
+        <p>&copy; 2024 BTA HELLFIRE</p>
+    </footer>
 </body>
+
 </html>

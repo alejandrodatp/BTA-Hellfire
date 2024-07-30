@@ -5,20 +5,15 @@ padding: 0;
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url('Imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: white;
-    color: #fff;
-    text-align: center;
-    padding: ;
-}
-
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -27,10 +22,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
@@ -59,11 +53,29 @@ footer {
 .menu a{
     color: #fff;
     text-decoration: none;
-    margin: 0 20px;
+    font-size: 30px;
+    transition: color 0.5s ease;
 }
-img.logobta{
-    height: 300px;
+
+.menu a:hover{
+        color: rgb(255, 150, 50); /* Color al pasar el cursor */
+    }
+
+.image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
 }
-img.logobta:hover{
-    
+
+.image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1.0s; /* Transición suave */
+}
+
+.image-wrapper:hover img {
+    opacity: 0.5; /* La imagen superior se vuelve invisible */
 }
